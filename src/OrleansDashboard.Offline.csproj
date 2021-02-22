@@ -2,6 +2,14 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Authors>El Maurete</Authors>
+        <Description>Offline support for the admin dashboard for Microsoft Orleans</Description>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/el-maurete/OrleansDashboard.Offline</PackageProjectUrl>
+        <PackageTags>orleans dashboard metrics monitor offline</PackageTags>
+        <RepositoryUrl>https://github.com/el-maurete/OrleansDashboard.Offline</RepositoryUrl>
+        <Version>0.1.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
@@ -9,9 +17,9 @@
         <EmbeddedResource Include="css\bootstrap.min.css" />
         <EmbeddedResource Include="css\skin-purple.min.css" />
         <EmbeddedResource Include="css\font-awesome.min.css" />
-        <EmbeddedResource Include="index.min.js" />
         <EmbeddedResource Include="webfonts\fa-solid-900.woff2" />
         <EmbeddedResource Include="Index.html" />
+        <EmbeddedResource Include="index.min.js" />
     </ItemGroup>
 
     <ItemGroup>

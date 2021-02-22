@@ -11,10 +11,8 @@ namespace DemoApp
         public void ConfigureServices(IServiceCollection services) =>
             services.AddDashboard();
 
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env) =>
             app.UseOrleansDashboardOffline();
-        }
 
         public static void ConfigureOrleans(ISiloBuilder siloBuilder) =>
             siloBuilder.UseLocalhostClustering();
