@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="css\AdminLTE.min.css" />
+        <EmbeddedResource Include="css\bootstrap.min.css" />
+        <EmbeddedResource Include="css\skin-purple.min.css" />
+        <EmbeddedResource Include="css\font-awesome.min.css" />
+        <EmbeddedResource Include="index.min.js" />
+        <EmbeddedResource Include="webfonts\fa-solid-900.woff2" />
+        <EmbeddedResource Include="Index.html" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="OrleansDashboard" Version="3.1.0" />
+    </ItemGroup>
+
+</Project>
