@@ -1,18 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
     <PropertyGroup>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
+        <PackageId>OrleansDashboard.Offline</PackageId>
+        <Version>0.1.1</Version>
         <Authors>El Maurete</Authors>
         <Description>Offline support for the admin dashboard for Microsoft Orleans</Description>
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/el-maurete/OrleansDashboard.Offline</RepositoryUrl>
         <PackageProjectUrl>https://github.com/el-maurete/OrleansDashboard.Offline</PackageProjectUrl>
         <PackageTags>orleans dashboard metrics monitor offline</PackageTags>
-        <RepositoryUrl>https://github.com/el-maurete/OrleansDashboard.Offline</RepositoryUrl>
-        <Version>0.1.0</Version>
+        <PackageIcon>logo.png</PackageIcon>
     </PropertyGroup>
 
     <ItemGroup>
+        <None Include="logo.png" Pack="true" PackagePath="\" />
         <EmbeddedResource Include="css\AdminLTE.min.css" />
         <EmbeddedResource Include="css\bootstrap.min.css" />
         <EmbeddedResource Include="css\skin-purple.min.css" />
@@ -25,5 +27,5 @@
     <ItemGroup>
         <PackageReference Include="OrleansDashboard" Version="3.1.0" />
     </ItemGroup>
-
+    
 </Project>
